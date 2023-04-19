@@ -1,0 +1,15 @@
+import { ExpressionType, VariableVectorMapType } from "./VectorCalculatorTypes";
+import { TreeDataNode } from "@webviz/core-components";
+export declare const getDefaultExpression: () => ExpressionType;
+export declare const isValidExpressionNameString: (name: string) => boolean;
+export declare const isNameOccupiedByVectors: (name: string, vectors: TreeDataNode[]) => boolean;
+export declare const isExpressionNameValidAndNotOccupiedByVectors: (name: string, vectors: TreeDataNode[]) => boolean;
+export declare const expressionNameValidationMessage: (name: string) => string;
+export declare const doesNameExistInExpressionList: (name: string, expressions: ExpressionType[]) => boolean;
+export declare const getDetailedExpression: (expression: ExpressionType) => string;
+export declare const getAvailableName: (nameSuggestion: string, expressions: ExpressionType[]) => string;
+export declare const isVariableVectorMapValid: (variableVectorMap: VariableVectorMapType[], delimiter: string, vectorData: TreeDataNode[]) => boolean;
+export declare const areVariableVectorMapsEqual: (first: VariableVectorMapType[], second: VariableVectorMapType[]) => boolean;
+export declare const areAllVectorNamesValid: (names: (string | undefined)[], delimiter: string, vectorData: TreeDataNode[]) => boolean;
+export declare const isVectorNameValid: (name: string, delimiter: string, vectorData: TreeDataNode[]) => boolean;
+export declare const createVariableVectorMapFromVariables: (variables: string[], variableVectorMap: VariableVectorMapType[]) => VariableVectorMapType[];

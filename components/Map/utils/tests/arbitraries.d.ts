@@ -1,0 +1,17 @@
+export function arbitraryMatrix(maxm: any, maxn: any): jsc.Arbitrary<Matrix>;
+export function arbitrarySquareMatrix(maxm: any, maxn: any): jsc.Arbitrary<Matrix>;
+export function arbitrarySizedArray(arb: any, size: any): jsc.Arbitrary<any[]>;
+export const arbitraryCell: jsc.Arbitrary<Cell>;
+export const arbitraryPoint: jsc.Arbitrary<Vector>;
+export const arbitraryNonEmptyCell: jsc.Arbitrary<Cell>;
+export const arbitraryVector: jsc.Arbitrary<Vector>;
+export const arbitraryGrid: jsc.Arbitrary<Grid>;
+export const arbitraryField: jsc.Arbitrary<Field>;
+export const arbitraryParticle: jsc.Arbitrary<Particle>;
+import { Matrix } from "../linear_algebra";
+import jsc from "jsverify";
+import { Cell } from "../cell";
+import { Vector } from "../linear_algebra";
+import Grid from "../grid";
+import Field from "../field";
+import Particle from "../particle";

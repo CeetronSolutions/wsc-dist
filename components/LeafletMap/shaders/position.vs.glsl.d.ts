@@ -1,0 +1,2 @@
+declare const vsPosition = "// This Source Code Form is subject to the terms of the Mozilla Public\n// License, v. 2.0. If a copy of the MPL was not distributed with this\n// file, You can obtain one at https://mozilla.org/MPL/2.0/.\n//\n// Copyright (C) 2020 - Equinor ASA.\n\nprecision highp float;\nattribute vec2 position;\n\nvoid main() {\n    gl_Position = vec4(position, 0, 1);\n}\n";
+export default vsPosition;

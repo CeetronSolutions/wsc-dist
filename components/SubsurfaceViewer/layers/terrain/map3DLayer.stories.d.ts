@@ -1,0 +1,12 @@
+import React from "react";
+import SubsurfaceViewer from "../../SubsurfaceViewer";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
+declare const _default: ComponentMeta<React.FC<import("../../SubsurfaceViewer").SubsurfaceViewerProps>>;
+export default _default;
+export declare const MapLayer3d: ComponentStory<typeof SubsurfaceViewer>;
+export declare const GradientFunctionColorMap: ComponentStory<typeof SubsurfaceViewer>;
+export declare const StepFunctionColorMap: ComponentStory<typeof SubsurfaceViewer>;
+export declare const DefaultColorScale: ComponentStory<typeof SubsurfaceViewer>;
+export declare const Readout: ComponentStory<typeof SubsurfaceViewer>;
+export declare const BreakpointColorMap: ComponentStory<typeof SubsurfaceViewer>;
+export declare const ColorMapRange: ComponentStory<typeof SubsurfaceViewer>;

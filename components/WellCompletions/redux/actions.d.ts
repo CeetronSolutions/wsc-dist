@@ -1,0 +1,6 @@
+export declare const updateId: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>;
+export declare const updateAttributeKeys: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], string>;
+export declare const updateTimeIndexRange: import("@reduxjs/toolkit").ActionCreatorWithPayload<[number, number], string>, updateTimeAggregation: import("@reduxjs/toolkit").ActionCreatorWithPayload<"None" | "Max" | "Average", string>, updateWellsPerPage: import("@reduxjs/toolkit").ActionCreatorWithPayload<number, string>, updateCurrentPage: import("@reduxjs/toolkit").ActionCreatorWithPayload<number, string>, updateWellSearchText: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, updateFilteredZones: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], string>, updateHideZeroCompletions: import("@reduxjs/toolkit").ActionCreatorWithPayload<boolean, string>, updateSortKey: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
+    sortKey: string;
+    sortDirection: import("./types").SortDirection;
+}, string>, deleteSortKey: import("@reduxjs/toolkit").ActionCreatorWithPayload<string, string>, updateIsDrawerOpen: import("@reduxjs/toolkit").ActionCreatorWithPayload<boolean, string>, updateFilterByAttributes: import("@reduxjs/toolkit").ActionCreatorWithPayload<string[], string>;

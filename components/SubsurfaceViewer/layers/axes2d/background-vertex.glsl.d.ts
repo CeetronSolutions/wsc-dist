@@ -1,0 +1,2 @@
+declare var _default: "#version 300 es\n#define SHADER_NAME graph-layer-axis-vertex-shader\n\nprecision highp float;\n\nin  vec3 positions;\n\nuniform mat4 projectionMatrix;\n\nvoid main(void) {\n   vec3 position_commonspace = positions; // These positions are in view space.\n   gl_Position = projectionMatrix * vec4(position_commonspace, 1.0); // From viewspace to clip\n}\n";
+export default _default;

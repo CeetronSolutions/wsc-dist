@@ -1,0 +1,66 @@
+export default D3PriorPosterior;
+declare class D3PriorPosterior {
+    constructor(height: any, container_id: any, data: any);
+    height: any;
+    container_id: any;
+    data: any;
+    iteration_index: number;
+    number_bins: number;
+    radius_circles: number;
+    margin: {
+        top: number;
+        bottom: number;
+        right: number;
+        left: number;
+    };
+    height_slider: number;
+    height_fraction_histogram: number;
+    updateData(data: any): void;
+    createXAndColorScale(): void;
+    global_min: number | undefined;
+    global_max: number | undefined;
+    x_scale: (number[] & d3.ScaleLinear<number, number, never>) | undefined;
+    color_scale: (number[] & d3.ScaleLinear<number, number, never>) | undefined;
+    updateTooltipLocation(x_value: any): void;
+    calculateBins(): void;
+    bins: any;
+    y_scale: (number[] & d3.ScaleLinear<number, number, never>) | undefined;
+    renderPlot(): void;
+    container: d3.Selection<d3.BaseType, any, HTMLElement, any> | undefined;
+    width: any;
+    tooltip: d3.Selection<HTMLDivElement, any, HTMLElement, any> | undefined;
+    svg: d3.Selection<SVGSVGElement, any, HTMLElement, any> | undefined;
+    createMainGroup(): void;
+    main_g: d3.Selection<SVGGElement, any, HTMLElement, any> | undefined;
+    width_plot: number | undefined;
+    height_plot: number | undefined;
+    height_histogram: number | undefined;
+    height_pile_chart: number | undefined;
+    y_offset_histogram: number | undefined;
+    y_offset_pile_chart: number | undefined;
+    renderHistogram(): void;
+    histogram_g: d3.Selection<SVGGElement, any, HTMLElement, any> | undefined;
+    updateHistogram(): void;
+    renderPileChart(): void;
+    pile_chart_g: d3.Selection<SVGGElement, any, HTMLElement, any> | undefined;
+    pile_chart_circles: d3.Selection<SVGCircleElement, {
+        id: string;
+        values: any;
+        x: number;
+        y: number;
+    }, SVGGElement, any> | undefined;
+    simulation: d3.Simulation<{
+        id: string;
+        values: any;
+        x: number;
+        y: number;
+    }, undefined> | undefined;
+    initNumberBinsPicker(): void;
+    numberBinsPicker: Slider | undefined;
+    _setNumberBins(index: any): void;
+    initIterationPicker(): void;
+    iterationPicker: Slider | undefined;
+    _setIteration(index: any): void;
+}
+import * as d3 from "d3";
+import Slider from "../../../shared/slider";
